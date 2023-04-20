@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Store</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: white;
+    }
+    .home-main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-nav {
+        display: flex;
+        align-items: center;    
+        width: 80vw; 
+        justify-content: space-between;
+    }
+    .home-img-logo-container {
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        margin-right: 20px;
+    }
+    .home-img-logo {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+    .home-search{
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+    .home-search-input {
+        width: 100%;
+        height: 40px;
+        
+    }
+    .home-search-container-logo{
+        display: flex;
+        background-color: gray;
+        height: 46px;
+        width: 52px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .home-search-img-logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .home-cart {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+        height: 100px;
+        width: 187px;
+        min-width: 187px;
+    }
+    .home-cart-container-logo {
+        height: 46px;
+    }
+    .home-cart-img-logo {
+        height: 100%;
+        width: 100%;
+    }
+    .home-total {
+        font-size: 24px;
+        margin: 0 20px;
+    }
+    .home-person-container-logo {
+        height: 46px;
+    }
+    .home-person-img-logo {
+        height: 100%;
+        width: 100%;
+    }
+
+    
+</style>
+<body>
+    <header class="home-main-container">
+        <nav class="home-nav">
+            <div class="home-img-logo-container">
+                <img class="home-img-logo"  src="./img/Brown Mascot Lion Free Logo.png" alt="game store">
+            </div>
+            <div class="home-search">
+                <input class="home-search-input" type="text" placeholder="Buscar Productos">
+                <div class="home-search-container-logo">
+                    <img class="home-search-img-logo" src="./img/search.svg" alt="search">
+                </div>
+            </div>
+            <div class="home-cart">
+                <div class="home-cart-container-logo">
+                    <img class="home-cart-img-logo" src="./img/cart.svg" alt="cart">
+                </div>
+                <span class="home-total">$0.00</span>
+                <div class="home-person-container-logo">
+                    <img class="home-person-img-logo" src="./img/person-circle.svg" alt="person">
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+</body>
+</html>

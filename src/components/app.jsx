@@ -1,4 +1,6 @@
 import React from "react";
-const app = () => {
-    return (<h1>hola mundo</h1>)
+import '../styles/global.scss'
+const App = () => {
+    return (<h1>hola mundo con webpack</h1>);
 }
+export default App;
