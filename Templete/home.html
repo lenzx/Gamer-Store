@@ -141,7 +141,6 @@
     img {
         width: 100%;
         height: 100%;
-        
     }
     .home-card-info {
         height: 40%;
@@ -163,15 +162,40 @@
     .home-main-destacados {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     .home-container-destacados {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        width: 90%;
     }
     figure {
         margin: 0;
     }
-    
+    .home-arrow-destacados {
+        width: 5%;
+        height: 100px;
+    }
+    .home-title-destacados {
+        font-size: 36px;
+        display: block;
+        margin: 20px 30px;
+    }
+    footer {
+        height: 20vh;
+        background-color: rgb(60, 0, 110);
+    }
+    main {
+        margin: 20px 0;
+    }
+    .home-card-title-product{
+        font-size: 16px;
+        word-wrap: break-word;
+    }
+    .home-card-price-product {
+        font-size: 28px;
+        font-weight: bold;
+    }
 </style>
 <body>
     <header class="home-main-container">
@@ -255,9 +279,9 @@
             </div>
         </section>
         <section>
-            <span>Productos Destacados</span>
-            <figure class="home-main-destacados">
-                <figure>
+            <span class="home-title-destacados">Productos Destacados</span>
+            <div class="home-main-destacados">
+                <figure class="home-arrow-destacados">
                     <img src="./img/icons8-galón-izquierdo-96.png" alt="">
                 </figure>
                 <div class="home-container-destacados">
@@ -266,7 +290,7 @@
                             <img src="https://promart.vteximg.com.br/arquivos/ids/275597-1000-1000/image-9f707cc2f766403d93361405db71bee9.jpg?v=636862912037700000" alt="">
                         </figure>
                         <div class="home-card-info">
-                            <span class="home-card-title-product">Mando ps4</span>
+                            <span class="home-card-title-product">mando ps3 </span>
                             <div class="home-card-price-product">$500</div>
                             <figure class="home-card-cart-product">
                                 <img src="./img/icons8-cart-64.png" alt="">
@@ -310,11 +334,13 @@
                         </div>
                     </div>
                 </div>
-                <figure>
+                <figure class="home-arrow-destacados">
                     <img src="./img/icons8-chebrón-hacia-la-derecha-96.png" alt="">
                 </figure>
             </div>
         </section>
     </main>
+    <footer >
+    </footer>
 </body>
 </html>
