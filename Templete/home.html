@@ -11,6 +11,7 @@
         margin: 0;
         background-color: white;
     }
+    /* header búsqueda*/
     .home-main-container {
         display: flex;
         flex-direction: column;
@@ -24,7 +25,7 @@
         justify-content: space-between;
     }
     .home-img-logo-container {
-        width: 100px;
+        width: 187px;
         height: 100px;
         min-width: 100px;
         margin-right: 20px;
@@ -38,20 +39,23 @@
         display: flex;
         align-items: center;
         flex-grow: 1;
+        border: 1px solid rgba(0, 0, 0, 0.247);
+        border-radius: 12px;
     }
     .home-search-input {
         width: 100%;
         height: 40px;
+        outline: none;
+        border-style: none;
+        margin-left: 10px;
         
     }
     .home-search-container-logo{
         display: flex;
-        background-color: gray;
         height: 46px;
         width: 52px;
         align-items: center;
         justify-content: center;
-        
     }
     .home-search-img-logo {
         width: 20px;
@@ -84,7 +88,89 @@
         height: 100%;
         width: 100%;
     }
+    /* header categorías */
+    .home-list-categories{
+        display: flex;
+        margin: 24px 0;
+        padding: 0;
+        justify-content: space-evenly;
+        width: 100vw;
+        font-size: 28px;
+    }
+    .home-list-categories li {
+        list-style: none;
 
+    }
+    /* main */
+    .home-container-oferts {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 40px;
+        border: 1px solid black;
+        margin: 0 10vw;
+    }
+    .home-oferts-count {
+        display: flex;
+    }
+    .home-product-card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border: 1px solid black;
+        margin: 0 10vw;
+        padding: 10px;
+    }
+    .home-main-oferts{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .home-product-card{
+        height: 350px;
+        width: 250px;
+        padding: 2px 8px;
+        margin: 2px 20px;
+    }
+    .home-product-card-img {
+        margin: 0;
+        padding: 1px 2px;
+        width: 100%;
+        height: 60%;
+        
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .home-card-info {
+        height: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .home-card-title-product {
+        width: 100%;
+    }
+    .home-card-price-product {
+        width: 70%; 
+    }
+    .home-card-cart-product {
+        width: 30%;
+        height: 75px;
+        margin: 0;   
+    }
+    .home-main-destacados {
+        display: flex;
+        justify-content: space-between;
+    }
+    .home-container-destacados {
+        display: flex;
+        justify-content: space-around;
+    }
+    figure {
+        margin: 0;
+    }
     
 </style>
 <body>
@@ -109,7 +195,126 @@
                 </div>
             </div>
         </nav>
+        <nav class="home-nav-categories">
+            <ul class="home-list-categories">
+                <li>Todas las categorías</li>
+                <li>Consolas</li>
+                <li>Accesorios</li>
+                <li>Monitores</li>
+                <li>Periféricos</li>
+            </ul>
+        </nav>
     </header>
-    
+    <main>
+        <section class="home-main-oferts">
+            <div class="home-container-oferts">
+                <span>Ofertas del dia</span>
+                <div class="home-oferts-count">
+                    <div>12:</div>
+                    <div>00:</div>
+                    <div>00</div>
+                </div>
+            </div>
+            <div class="home-product-card-container">
+                <div class="home-product-card">
+                    <figure class="home-product-card-img">
+                        <img src="https://promart.vteximg.com.br/arquivos/ids/275597-1000-1000/image-9f707cc2f766403d93361405db71bee9.jpg?v=636862912037700000" alt="">
+                    </figure>
+                    <div class="home-card-info">
+                        <span class="home-card-title-product">Mando ps4</span>
+                        <div class="home-card-price-product">$500</div>
+                        <figure class="home-card-cart-product">
+                            <img src="./img/icons8-cart-64.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="home-product-card">
+                    <figure class="home-product-card-img">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_636446-MLC51713674205_092022-O.jpg" alt="">
+                    </figure>
+                    <div class="home-card-info">
+                        <span class="home-card-title-product">Mando ps4</span>
+                        <div class="home-card-price-product">$500</div>
+                        <figure class="home-card-cart-product">
+                            <img src="./img/icons8-cart-64.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="home-product-card">
+                    <figure class="home-product-card-img">
+                        <img src="https://falabella.scene7.com/is/image/Falabella/gsc_113166377_555362_1?wid=1500&hei=1500&qlt=70" alt="">
+                    </figure>
+                    <div class="home-card-info">
+                        <span class="home-card-title-product">Mando ps4</span>
+                        <div class="home-card-price-product">$500</div>
+                        <figure class="home-card-cart-product">
+                            <img src="./img/icons8-cart-64.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <span>Productos Destacados</span>
+            <figure class="home-main-destacados">
+                <figure>
+                    <img src="./img/icons8-galón-izquierdo-96.png" alt="">
+                </figure>
+                <div class="home-container-destacados">
+                    <div class="home-product-card">
+                        <figure class="home-product-card-img">
+                            <img src="https://promart.vteximg.com.br/arquivos/ids/275597-1000-1000/image-9f707cc2f766403d93361405db71bee9.jpg?v=636862912037700000" alt="">
+                        </figure>
+                        <div class="home-card-info">
+                            <span class="home-card-title-product">Mando ps4</span>
+                            <div class="home-card-price-product">$500</div>
+                            <figure class="home-card-cart-product">
+                                <img src="./img/icons8-cart-64.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="home-product-card">
+                        <figure class="home-product-card-img">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_636446-MLC51713674205_092022-O.jpg" alt="">
+                        </figure>
+                        <div class="home-card-info">
+                            <span class="home-card-title-product">Mando ps4</span>
+                            <div class="home-card-price-product">$500</div>
+                            <figure class="home-card-cart-product">
+                                <img src="./img/icons8-cart-64.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="home-product-card">
+                        <figure class="home-product-card-img">
+                            <img src="https://falabella.scene7.com/is/image/Falabella/gsc_113166377_555362_1?wid=1500&hei=1500&qlt=70" alt="">
+                        </figure>
+                        <div class="home-card-info">
+                            <span class="home-card-title-product">Mando ps4</span>
+                            <div class="home-card-price-product">$500</div>
+                            <figure class="home-card-cart-product">
+                                <img src="./img/icons8-cart-64.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="home-product-card">
+                        <figure class="home-product-card-img">
+                            <img src="https://promart.vteximg.com.br/arquivos/ids/275597-1000-1000/image-9f707cc2f766403d93361405db71bee9.jpg?v=636862912037700000" alt="">
+                        </figure>
+                        <div class="home-card-info">
+                            <span class="home-card-title-product">Mando ps4</span>
+                            <div class="home-card-price-product">$500</div>
+                            <figure class="home-card-cart-product">
+                                <img src="./img/icons8-cart-64.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <img src="./img/icons8-chebrón-hacia-la-derecha-96.png" alt="">
+                </figure>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
